@@ -17,8 +17,6 @@ function App() {
   const [country, setCountry] = useState("worldwide");
   const [countryInfo, setCountryInfo] = useState({});
   const [tableData, setTableData] = useState([]);
-  const [casesType, setCasesType] = useState("cases");
-  const [mapCountries, setMapCountries] = useState([]);
   // const [mapCenter, setMapCenter] = useState({ lat: 34.80746, lng: -40.4796 });
   // const [mapZoom, setMapZoom] = useState(3);
 
@@ -42,7 +40,7 @@ function App() {
           const sortedData = sortData(data);
           setTableData(sortedData);
           //  console.log(data);
-          setMapCountries(data);
+          // setMapCountries(data);
           setCountries(countries);
         });
     };
